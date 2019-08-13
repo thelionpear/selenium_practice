@@ -29,6 +29,28 @@ public class Assignment2 {
 		driver.findElement(By.id("SearchBtn")).click();
 		//grab error message and print in output 
 		System.out.println(driver.findElement(By.id("homeErrorMessage")).getText());
+		driver.quit();
 	}
 
 }
+		//parts of the teacher's code that were different and interesting to me
+		//WebElement adult=driver.findElement(By.id("Adults"));
+		//Select s =new Select(adult);
+		//s.selectByIndex(2);
+		////DD2
+		//WebElement ch=driver.findElement(By.id("Childrens"));
+		//Select s1 =new Select(ch);
+		//s1.selectByIndex(2);
+
+		//I also liked this code by a student 
+		//WebElement a= driver.findElement(By.xpath("//select[@id='Adults']"));
+//		WebElement b= driver.findElement(By.xpath("//select[@id='Childrens']"));
+//		WebElement c= driver.findElement(By.xpath("//select[@id='Infants']"));
+//		Select s= new Select(a);
+//		Select s1= new Select(b);
+//		Select s2= new Select(c);
+//		s.selectByValue("8");
+//		s1.selectByVisibleText("1");
+//		s2.selectByValue("2");
+
+
