@@ -22,7 +22,7 @@ public class End2End {
 		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
 		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) {
-			System.out.println("its disabled");
+			System.out.println("it's disabled");
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
