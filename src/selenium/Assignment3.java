@@ -14,6 +14,8 @@ public class Assignment3 {
 		driver.get("http://www.itgeared.com/demo/1506-ajax-loading.html");
 		driver.findElement(By.linkText("Click to load get data via Ajax!")).click();
 		WebDriverWait d = new WebDriverWait(driver, 20);
+		//using presentOfElementLocated didn't work at first because the element is always
+		//present in the DOM, just not visible. 
 		d.until(ExpectedConditions.visibilityOfElementLocated(By.id("results")));
 		System.out.println(driver.findElement(By.id("results")).getText());
 	}
