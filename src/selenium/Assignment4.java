@@ -18,14 +18,14 @@ public class Assignment4 {
 		driver.findElement(By.linkText("Click Here")).click();
 		//go to child window
 		//print line from child window 
-		System.out.println(driver.findElement(By.className("example")));
+		System.out.println(driver.findElement(By.className("example")).getText());
 		//go to parent 
 		Set<String>ids=driver.getWindowHandles();
 		Iterator<String> it = ids.iterator();
 		String parentid=it.next();
 		driver.switchTo().window(parentid);
 		//print that text 
-		System.out.println(driver.findElement(By.xpath("//h3[contains(text(),'Opening a new window')]")));
+		System.out.println(driver.findElement(By.xpath("//h3[contains(text(),'Opening a new window')]")).getText());
 	}
 
 }
