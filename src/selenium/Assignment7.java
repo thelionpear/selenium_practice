@@ -27,5 +27,4 @@ public class Assignment7 {
 				"The content of row 2, column " + (i+1) + " is: " + gridDriver.findElements(By.xpath("//table[@id='product']//tbody//tr[3]//td")).get(i).getText());
 		}
 	}
-
 }
