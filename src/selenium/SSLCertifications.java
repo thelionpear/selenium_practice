@@ -21,7 +21,7 @@ public class SSLCertifications {
 		//Belows to your local browser
 		ChromeOptions c= new ChromeOptions();
 		c.merge(ch);
-		System.setProperty("webdriver.chrome.driver", "");
+		System.setProperty("webdriver.chrome.driver", "/Users/michellegarcia/Downloads/chromedriver");
 		WebDriver driver=new ChromeDriver(c);
 	}
 }

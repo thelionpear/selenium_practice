@@ -43,7 +43,5 @@ public class Assignment8 {
 		} else {
 			System.out.println("Element  found");
 		}
-
 	}
-
 }
