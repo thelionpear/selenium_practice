@@ -18,6 +18,8 @@ import org.testng.annotations.BeforeMethod;
 
 public class GridExample {
 	//see the lecture on this topic for more. I didn't follow every step on this part. 
+	//for example, I didn't add the jar I downloaded for grid into this project 
+	//and I didn't do all the setup for the driver 
 	// protected ThreadLocal<RemoteWebDriver> threadDriver = null;
 
 	public static void main(String[] args) throws MalformedURLException {
@@ -44,3 +46,29 @@ public class GridExample {
 //http://iporhostnameofHub:4444/grid/console 
 //4.Registering Node with Hub
 //Java –jar selenium-server-standalone-2.44.0.jar –role webdriver –hub http://iporhostnameofHub:4444/grid/register -port 5566
+
+//more grid code
+//import java.net.MalformedURLException;
+//import java.net.URL;
+//
+//import org.openqa.selenium.Platform;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.openqa.selenium.remote.RemoteWebDriver;
+//
+//public class remotetest {
+//
+//public static void main(String[] args) throws MalformedURLException {
+//Automated- chrome,firefox,ie,safari
+//
+//DesiredCapabilities dc= new DesiredCapabilities();
+//dc.setBrowserName("chrome");
+//dc.setPlatform(Platform.WINDOWS);
+////dc.se
+//
+////Webdriver driver=new ChromeDriver();
+//WebDriver driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),dc);
+//driver.get("http://rediff.com");
+//}
+//
+//}
